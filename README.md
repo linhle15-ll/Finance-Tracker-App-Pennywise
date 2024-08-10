@@ -118,10 +118,13 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Usage instruction
 ### Welcome Page and Sign-in Page
+![Sign-in](https://github.com/user-attachments/assets/d8dc6c60-dce0-4d42-9d11-ca24fd26cf23)
 
 ### Sign-up Page
+![Sign-up](https://github.com/user-attachments/assets/ade4c8ee-da88-4f2f-aaa3-af68b3efc64c)
 
 ### Dashboard Page
+
 - Transactions Line Graph
 - Total Income, Total Expense, Balance
 - Recent Transactions (sort Incomes and Expense Arrays by latest createdAt)
