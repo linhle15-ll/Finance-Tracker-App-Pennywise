@@ -1,11 +1,11 @@
 import React, { useState }from "react"
 import { usePathname } from 'next/navigation'
-import { useTransactionStore } from '../stores/transactionstore.ts'
-import { Delete, SearchIcon } from '../utils/icons'
-import { dateFormat } from "../utils/dateFormat"
+import { useTransactionStore } from '../stores/transactionstore.js'
+import { Delete, SearchIcon } from '../utils/icons.jsx'
+import { dateFormat } from "../utils/dateFormat.jsx"
 
-import { Salary, Freelance, Investment, Interest, Utilities, Travelexpenses, Entertainment, Education, Other } from '../utils/icons'
-import ConfirmDeleteModal from './confirmDeleteModal'
+import { Salary, Freelance, Investment, Interest, Utilities, Travelexpenses, Entertainment, Education, Other } from '../utils/icons.jsx'
+import ConfirmDeleteModal from './confirmDeleteModal.jsx'
 // CSS from expense-income-maincboard.css
 
 const SourcesListTable = () => {

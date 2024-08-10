@@ -22,7 +22,7 @@ ChartJS.register(
 );
 
 import { useTransactionStore } from '../stores/transactionstore.ts';
-import { dateFormat } from '../utils/dateFormat';
+import { dateFormat } from '../utils/dateFormat.jsx';
 import styled from 'styled-components';
 
 const LineGraph = () => {

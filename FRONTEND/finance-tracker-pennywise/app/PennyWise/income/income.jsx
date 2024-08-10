@@ -2,7 +2,7 @@
 import React from "react"
 import Sideboard from "../../components/sideboard"
 import TotalMainBoard from '../../components/totalMainBoard'
-import { useTransactionStore } from "../../stores/transactionstore.ts"
+import { useTransactionStore } from "../../stores/transactionstore"
 
 const IncomePage = () => {
     return (
