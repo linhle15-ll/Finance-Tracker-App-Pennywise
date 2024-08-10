@@ -67,6 +67,8 @@ export const addIncome = async(e:any) => {
 
         if (res.status === 200) {
             console.log("New resource is added!")
+            await getIncomes();
+            getTotalIncome();
         }
         console.error("Error while adding new income resource", res.data);
 
@@ -131,6 +133,8 @@ export const addExpense = async (e) => {
 
         if (res.status === 200) {
             console.log("New resource is added!")
+            await getExpenses();
+            getTotalExpense();
         }
         console.error("Error while adding new expense resource", res.data);
 

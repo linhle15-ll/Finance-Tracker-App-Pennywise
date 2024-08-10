@@ -82,8 +82,8 @@ export const addNewBudget = async () => {
 
         if (res.status === 200) {
             console.log("New budget is added!")
+            handleReset();
             getBudgets();
-            await resetBudgetDistribution();
             
         }
         console.error("Error while adding new budget", res.status);
@@ -134,7 +134,8 @@ export const updateBudgetDistribution = async(id) => {
         });
         if (res.status === 200) {
             await useBudgetStore.setState({ distribution: res.data.distribution })
-          
+            resetBudgetDistribution();
+
         } else {
             console.error("Error updating budget distribution", res.status);
         }
