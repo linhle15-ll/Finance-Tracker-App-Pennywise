@@ -101,7 +101,7 @@ npm run dev
 ```
 ```bash
 cd FRONTEND
-cd finance-tracker-app
+cd finance-tracker-pennywise
 npm run dev
 ```
 - Or you can concurrently run both BACKEND and FRONTEND at project root directory:
