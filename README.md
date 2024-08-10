@@ -124,16 +124,22 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ![Sign-up](https://github.com/user-attachments/assets/ade4c8ee-da88-4f2f-aaa3-af68b3efc64c)
 
 ### Dashboard Page
-
+![dashboard](https://github.com/user-attachments/assets/6060890a-171c-45fc-8838-01ca0916512a)
 - Transactions Line Graph
 - Total Income, Total Expense, Balance
 - Recent Transactions (sort Incomes and Expense Arrays by latest createdAt)
 
 ### Income Page
+![income](https://github.com/user-attachments/assets/e4346ec0-f172-42c3-9ec4-be7b924ffbfd)
 
 ### Expense Page
+![expense](https://github.com/user-attachments/assets/719e6b06-46f2-4a44-9abf-3ce5f7c5ea46)
 
 ### Budget Page
+![budget1](https://github.com/user-attachments/assets/235ea893-f59b-422c-9aa4-44e67f5ff113)
+![budget2](https://github.com/user-attachments/assets/82a56a30-c5fd-4241-a3be-9370c80c6411)
+
+![budget](https://github.com/user-attachments/assets/b8893eb5-4173-454a-b77d-f778b0ac03c5)
 
 ## Learning Resources
 ### Next.js
