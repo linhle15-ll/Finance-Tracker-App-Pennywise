@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=1770&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2%;
+  gap: 5%;
+  color: #02403E;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(184deg, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.6) 100%);
+  opacity: 0.7; /* Adjust this value to control lightness */
+  z-index: 1;
+}
+
+.main > * {
+  position: relative;
+  z-index: 2;
+}
+
+input:focus {
+  border-color: rgb(0, 184, 178);
+}
+/* Side Board */
+
+.sideBoard{
+  display: flex;
+  flex-direction: column;
+  padding: 1.2% 0%;
+  gap: 40px;
+}
+
+.logoContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.logo{
+  background: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 90%;
+}
+
+.PennyWise{
+  font-size: 35px;
+  font-weight: bold ;
+}
+
+.hello{
+  font-size: 25px;
+  font-weight: 500 ;
+}
+
+.memuItems{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  left: 2.5%;
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+
+.menuItem{
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+}
+
+.memuItem:hover{
+  border-right: blue solid 2px;
+  transition: border-right 0.3s ease;
+}
+
+/* Main Board */
+.mainBoardContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #02403E;
+}
+
+.mainBoard{
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  padding: 1.5% 3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 668px;
+  gap: 10px;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.menuItem:hover{
+  border-left: 3px #02403E solid;
+  background: #31dbb782;
+}

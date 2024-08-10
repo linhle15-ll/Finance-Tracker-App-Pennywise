@@ -1,0 +1,15 @@
+{
+  "name": "finance-tracker-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "Ngoc Linh Le",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
