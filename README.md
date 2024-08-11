@@ -19,17 +19,18 @@ For this project, I use <strong>MERN Stack</strong>, which is a common tech stac
 
 - <img src="https://img.icons8.com/color/48/000000/mongodb.png" width="20"/> <strong> MongoDB</strong> for database 
 - <img src="https://img.icons8.com/fluency/48/000000/node-js.png" width="20"/> <strong> Express.js (Node.js)</strong> for Backend 
-- <img src="https://img.icons8.com/plasticine/100/000000/react.png" width="20"/> <strong> React.js - Next.js </strong> for Frontend 
+- <img src="https://img.icons8.com/plasticine/100/000000/react.png" width="20"/> <strong> React.js - Next.js </strong> for Frontend
+- 🐻 Zustand (instead of Redux) </strong> for Statement management
 
 ### Where I got the inspiration form (Why the app is created? )
-An inspiration for me to work on a project often stems from my own problem, and my perspective on the problem with other people. Personally speaking, I am not very good at financial management, but I tried to better at this when I started an independent life as an international student in a completely foreign country I started my first job. I deeply understand how important it is for students like me to feel "safe and secure" about financial matters.
+An inspiration for me to work on a project often stems from my own problem, and my perspective on the problem with other people. Personally speaking, I am not very good at financial management, but I tried to be better at this when I started my independent life as an international student in a completely foreign country and started my first job. I deeply understand how important it is for students like me to feel "safe and secure" about financial matters.
 
 Thus, <strong> PennyWise </strong> is a solution that helps users to:
 - <strong> smartly manage their money </strong>, or income and expense in particular
 - <strong> keep up reasonable financial management habit</strong>: for what and how much money should be used 
 - <strong> feel motivated</strong>: a <em> special algorithm </em> that aligns with user's intention to budget for future goals 
 
-I hope that this app can do better than this with more promising improvements in the future. Possible technical implementations that are being considered are <strong> more attracting UI </strong>, <strong> minigames </strong> to improve interaction with users, and on top of all, <strong>AI/ML applications</strong> to predict user's habits and provide smart finanical suggestions.
+I hope that this app can do better than this with more promising improvements in the future. Possible technical implementations that are being considered are <strong> more attracting UI </strong>, <strong> minigames </strong> to improve interaction with users, and on top of all, <strong>AI/ML applications</strong> to predict user's habits and provide smart finanical suggestions. My expectations to better my prooduct motivates me to learn a lot everyday!
 
 ## Special Feature: An Algorithm! 
 While making this app, I am thinking of my case. Sometimes, I wonder how much money I am having now for certain goals/ expenditure sections, such as a NYC trip this winter, or budgets to buy a Colombia Coat. Therefore, I <strong> create an algorithm </strong> for this app that works in a way that:
@@ -37,7 +38,7 @@ While making this app, I am thinking of my case. Sometimes, I wonder how much mo
 - Keep track of the balance </strong>, where current balance = current total income - current total expense
 - Allowing users to actively set <strong> how much % of balance would be distributed for the target budget </strong>.
 </br>For example, I would set 40% of balance for monthly book subscription and 20% for money saving up for NYC trip 
--  Users can clearly know how much money they are having for a certain target budget, and thus <strong> better determining when to spend the money </strong> without much worry about distributions for other targets
+-  Therefore, users can clearly know how much money they are having for a certain target budget, and thus <strong> better determining when to spend the money </strong> without much worry about distributions for other targets (better financial plannings)
 
  
 ## Install and Run 
