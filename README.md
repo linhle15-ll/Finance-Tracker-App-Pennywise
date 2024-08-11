@@ -173,19 +173,23 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ### MongoDB
 - **[MongoDB Official Documentation](https://docs.mongodb.com/)**
   - The authoritative resource for learning about MongoDB features and APIs.
-- **[MongoDB University](https://university.mongodb.com/)**
-  - Free courses on MongoDB, ranging from beginner to advanced levels.
 - **[The Net Ninja MongoDB Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h7WbYf6tZB-XI8-m2MAzlm)**
   - A well-structured YouTube playlist for learning MongoDB from scratch.
 - **[MongoDB Basics by FreeCodeCamp](https://www.youtube.com/watch?v=E7Voso411p8)**
   - A comprehensive tutorial on MongoDB basics, available on YouTube.
 
-
+### Zustand 
+- **[Zustand Official Documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)**
+  - A comprehensive documentation for learning about Zustand
+- **[React Zustand Tutorial](https://www.youtube.com/watch?v=h0rQ73r8yag&list=PL1T-3Hf9FqXbH54aLLMWMpdn6OMa5TWOX)**
+  - My favorite Zustand tutorial on Youtube. Check this out!
 ### How to deploy on Vercel
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+#### Note ####
+I have not learned every thing in above resources but used them for reference, but I think they are good and easy to understand enough to look at. 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
