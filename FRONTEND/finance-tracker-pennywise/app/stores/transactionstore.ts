@@ -61,7 +61,7 @@ export const addIncome = async(e:any) => {
     }
 
     try {
-        const res = await axios.post('http://localhost:5000/api/add-income', newFormData , {
+        const res = await axios.post('/api/add-income', newFormData , {
             headers: { 'Content-Type': 'application/json' },
         });
 
@@ -80,7 +80,7 @@ export const addIncome = async(e:any) => {
 export const getIncomes = async() => {
 
     try {
-        const res = await axios.get('http://localhost:5000/api/get-incomes');
+        const res = await axios.get('/api/get-incomes');
 
         if (res.status === 200) {
             useTransactionStore.setState({ incomesArr: res.data });
@@ -95,7 +95,7 @@ export const getIncomes = async() => {
 
 export const deleteIncome = async (id) => {
     try {
-        const res = await axios.delete(`http://localhost:5000/api/delete-income/${id}`);
+        const res = await axios.delete(`/api/delete-income/${id}`);
 
         if (res.status === 200) {
             console.log('Income is deleted.')
@@ -127,7 +127,7 @@ export const addExpense = async (e) => {
     }
 
     try {
-        const res = await axios.post('http://localhost:5000/api/add-expense', newFormData , {
+        const res = await axios.post('/api/add-expense', newFormData , {
             headers: { 'Content-Type': 'application/json' },
         });
 
@@ -145,7 +145,7 @@ export const addExpense = async (e) => {
 
 export const getExpenses = async() => {
     try {
-        const res = await axios.get('http://localhost:5000/api/get-expenses');
+        const res = await axios.get('/api/get-expenses');
 
         if (res.status === 200) {
             useTransactionStore.setState({ expensesArr: res.data });
@@ -160,7 +160,7 @@ export const getExpenses = async() => {
 
 export const deleteExpense = async(id) => {
     try {
-        const res = await axios.delete(`http://localhost:5000/api/delete-expense/${id}`);
+        const res = await axios.delete(`/api/delete-expense/${id}`);
 
         if (res.status === 200) {
             console.log('Expense is deleted.')

@@ -76,7 +76,7 @@ export const addNewBudget = async () => {
     }
 
     try {
-        const res = await axios.post('http://localhost:5000/api/add-budget', newFormData , {
+        const res = await axios.post('/api/add-budget', newFormData , {
             headers: { 'Content-Type': 'application/json' },
         });
 
@@ -95,7 +95,7 @@ export const addNewBudget = async () => {
 
 export const getBudgets = async () => {
     try {
-        const res = await axios.get('http://localhost:5000/api/get-budgets');
+        const res = await axios.get('/api/get-budgets');
         if (res.status === 200) {
             useBudgetStore.setState({ budgetsArr: res.data })
         }
@@ -107,7 +107,7 @@ export const getBudgets = async () => {
 
 export const deleteBudget = async (id) => {
     try {
-        const res = await axios.delete(`http://localhost:5000/api/delete-budget/${id}`);
+        const res = await axios.delete(`/api/delete-budget/${id}`);
 
         if (res.status === 200) {
             console.log('Budget is deleted.')
@@ -129,7 +129,7 @@ export const getRecentBudgets = () => {
 
 export const updateBudgetDistribution = async(id) => {
     try {
-        const res = await axios.put(`http://localhost:5000/api/update-budget-distribution/${id}`, {
+        const res = await axios.put(`/api/update-budget-distribution/${id}`, {
             distribution: useBudgetStore.getState().distribution
         });
         if (res.status === 200) {
