@@ -18,4 +18,9 @@ router.post('/add-income', addIncome)
     .delete('/delete-budget/:id', deleteBudget)
     .put('/update-budget-distribution/:id', updateBudgetDistribution)
 
+    .post('/test', (req, res) => {
+        res.send('Hello World');
+    });
+
+
 module.exports = router;
