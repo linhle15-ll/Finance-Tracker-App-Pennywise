@@ -6,7 +6,6 @@ import { dateFormat } from "../utils/dateFormat"
 
 import { Salary, Freelance, Investment, Interest, Utilities, Travelexpenses, Entertainment, Education, Other } from '../utils/icons.jsx'
 import ConfirmDeleteModal from './confirmDeleteModal'
-// CSS from expense-income-maincboard.css
 
 const SourcesListTable = () => {
     const pathname = usePathname()

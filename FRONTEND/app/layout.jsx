@@ -4,7 +4,6 @@ import {
 } from '@clerk/nextjs'
 
 import "./globals.css";
-import "./expense-income-mainBoard.css";
 
 const poppins = Poppins({ 
   subsets: ["latin"], 
