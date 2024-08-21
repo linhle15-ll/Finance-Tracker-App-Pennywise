@@ -15,7 +15,7 @@ import { useUser } from "@clerk/clerk-react";
 
 const Sideboard = () => {
     const pathname = usePathname()
-    const isNotDashboard = pathname !== '/PennyWise/dashboard'
+    const isNotDashboard = pathname !== '/dashboard'
     
     const { isSignedIn, user } = useUser();
     

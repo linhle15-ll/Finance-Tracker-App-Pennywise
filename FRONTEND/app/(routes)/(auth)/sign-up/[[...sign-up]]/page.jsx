@@ -20,7 +20,7 @@ export default function SignupPage() {
             />
 
             <div className="relative text-center p-8 lg:text-left lg:p-12">
-              <a className="block text-white" href="/PennyWise">
+              <a className="block text-white" href="/">
                 <span className="sr-only">Home</span>
                 <Image
                   src={logo}

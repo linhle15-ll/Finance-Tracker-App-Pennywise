@@ -15,7 +15,7 @@ import { Delete } from '../../utils/icons'
 
 const Budget = () => {
     const pathname = usePathname()
-    const isBudget = pathname === "/PennyWise/budget";
+    const isBudget = pathname === "/budget";
 
     const { budgetsArr } = useBudgetStore.getState();
     const totalDistribution = budgetsArr.reduce((acc, curr) => acc + curr.distribution, 0);
