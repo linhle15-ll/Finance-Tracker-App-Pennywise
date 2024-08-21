@@ -102,18 +102,12 @@ npm run dev
 ```
 ```bash
 cd FRONTEND
-cd finance-tracker-pennywise
 npm run dev
-```
-- Or you can concurrently run both BACKEND and FRONTEND at project root directory:
-```bash
-npm run dev
-# I set concurrently in package.json/scripts
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `FRONTEND/finance-tracker-app/...` for FRONTEND and `BACKEND/src/...` for BACKEND. The page auto-updates as you edit the file.
+You can start editing the page by modifying `FRONTEND/...` for FRONTEND and `BACKEND/...` for BACKEND. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Poppins, a custom Google Font.
 
