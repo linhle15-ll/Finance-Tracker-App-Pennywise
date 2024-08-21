@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal } from 'antd';
 
-import { deleteIncome, deleteExpense, getIncomes, getExpenses, getBalance, getTotalIncome } from '../stores/transactionstore.ts'
+import { deleteIncome, deleteExpense, getIncomes, getExpenses } from '../stores/transactionstore.ts'
 import { deleteBudget, getBudgets } from '../stores/budgetstore';
 
 const ConfirmDeleteModal = ({ id, open, setOpen, isIncome, isExpense, isBudget}) => { // pass props in a { }

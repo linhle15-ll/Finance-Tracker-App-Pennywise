@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Modal } from 'antd';
 import EmojiPicker from 'emoji-picker-react';
 import { addNewBudget, handleChange, useBudgetStore, getBudgets,handleReset } from '../stores/budgetstore'
-import styles from '../PennyWise/budget/budget.module.css'
 
 const NewBudgetForm = ({ open, setOpen }) => {
     const [ openEmojiPicker, setOpenEmojiPicker ] = useState(false);
@@ -26,13 +25,13 @@ const NewBudgetForm = ({ open, setOpen }) => {
                 cancelText="Cancel"
 
             >
-                <form className = {styles.form}>
+                <form className = "flex flex-col gap-3.5 max-h-[450px] overflow-y-scroll">
                     <div> 
-                        <span style = {{color: "#3D3BCF"}}> Smart Budgets,  </span> 
-                        <span style = {{color: "#00B8B2"}}> Happy Life  </span> 
+                        <span className = "text-mintGreen"> Smart Budgets,  </span> 
+                        <span className = "text-mintGreen"> Happy Life  </span> 
                     </div> 
                     <div>
-                        <button className = {styles.emojiBtn} 
+                        <button className = "p-1 text-h8 border-2 border-lightGrey rounded-[10px] hover:bg-transparent" 
                             type = "button" 
                             onClick = {() => setOpenEmojiPicker(!openEmojiPicker)}
                         >
@@ -50,21 +49,21 @@ const NewBudgetForm = ({ open, setOpen }) => {
                         </div>
                     </div>
 
-                    <input className = {styles.inputField} required
+                    <input className = "border border-gray-400 p-2 rounded-[10px] mr-2 focus:outline-none focus:border-mintGreen" required
                         type = "text"  
                         onChange={(e) => handleChange("title", e.target.value)} 
                         placeholder = "Budget Title*" 
                         maxLength={40}
                     /> 
 
-                    <input className = {styles.inputField} 
+                    <input className = "border border-gray-400 p-2 rounded-[10px] mr-2 focus:outline-none focus:border-mintGreen" 
                         type = "text" 
                         onChange={(e) => handleChange("description", e.target.value)} 
                         placeholder = "Budget Description" 
                         maxLength={40}
                     /> 
 
-                    <input className = {styles.inputField} required 
+                    <input className = "border border-gray-400 p-2 rounded-[10px] mr-2 focus:outline-none focus:border-mintGreen" required 
                         type = "number"  
                         onChange={(e) => handleChange("amount" , e.target.value)} 
                         placeholder = "Budget Target Amount*" 

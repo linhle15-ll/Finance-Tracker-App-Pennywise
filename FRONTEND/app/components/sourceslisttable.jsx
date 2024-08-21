@@ -22,9 +22,9 @@ const SourcesListTable = () => {
         setOpen(true);
     };
 
-    const resourcesArr = pathname === "/PennyWise/income" ? incomesArr : expensesArr;
-    const isIncome = pathname === "/PennyWise/income";
-    const isExpense = pathname === "/PennyWise/expense"
+    const resourcesArr = pathname === "/income" ? incomesArr : expensesArr;
+    const isIncome = pathname === "/income";
+    const isExpense = pathname === "/expense"
 
     const getCategoryIcon = (category) => {
         switch (category) {

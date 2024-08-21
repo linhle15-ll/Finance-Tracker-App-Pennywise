@@ -1,7 +1,6 @@
 import React from 'react';
 import { Modal } from 'antd';
-import styles from '../PennyWise/budget/budget.module.css'
-import { useBudgetStore, handleDistributionChange, updateBudgetDistribution, resetBudgetDistribution, getBudgets } from '../stores/budgetstore'
+import { handleDistributionChange, updateBudgetDistribution, resetBudgetDistribution, getBudgets } from '../stores/budgetstore'
 import { getBalance } from '../stores/transactionstore.ts';
 
 const DistributionModal = ({ id, open, setOpen }) => {
@@ -24,12 +23,12 @@ const DistributionModal = ({ id, open, setOpen }) => {
                 cancelText="Cancel"
 
             >
-                <form className = {styles.form}>
+                <form className = "flex flex-col gap-3.5 max-h-[450px] overflow-y-scroll">
                     <div> 
                         <div> Your balance is now <span style = {{fontWeight: "600"}}> $ {getBalance()}. </span> </div>
-                        <span style = {{color: "#00B8B2", fontWeight: "600", fontStyle: "italic"}}> How much % of balance is to be distributed to your budget? </span> 
+                        <span className = "text-darkGreen font-600 font-italic"> How much % of balance is to be distributed to your budget? </span> 
                     </div> 
-                    <input className = {styles.inputField} required
+                    <input className = "border border-gray-400 p-2 rounded-[10px] mr-2 focus:outline-none focus:border-mintGreen" required
                         type = "number" 
                         onChange={(e) => handleDistributionChange("distribution", e.target.value)} 
                         placeholder = "Distribution Percentage" 

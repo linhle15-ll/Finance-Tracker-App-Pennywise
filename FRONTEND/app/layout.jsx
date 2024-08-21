@@ -8,7 +8,9 @@ import "./expense-income-mainBoard.css";
 
 const poppins = Poppins({ 
   subsets: ["latin"], 
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]});
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins"
+});
 
 export const metadata = {
   title: "PennyWise",
@@ -19,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={poppins.className}>
+        <body className={`${poppins.variable}`}>
           {children}
         </body>
       </html>

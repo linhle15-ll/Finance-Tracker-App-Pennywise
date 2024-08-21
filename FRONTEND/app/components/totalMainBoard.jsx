@@ -10,7 +10,7 @@ import SourcesListTable from './sourceslisttable';
 
 const TotalMainBoard = () => {
     const pathname = usePathname();
-    const isIncome = pathname === "/PennyWise/income";
+    const isIncome = pathname === "/income";
 
     const incomeCategories = [
         { value: 'salary', label: 'Salary' },
@@ -29,15 +29,15 @@ const TotalMainBoard = () => {
         { value: 'other', label: 'Other' }
     ];
 
-    const categories = pathname === "/PennyWise/income" ? incomeCategories : expenseCategories
+    const categories = pathname === "/income" ? incomeCategories : expenseCategories
 
     return(
-        <div className = "mainBoardContainer">
-            <div className = "mainBoard">
+        <div className = "font-poppins flex flex-col w-[100%] text-darkGreen">
+            <div className="bg-white/30 rounded-lg shadow-lg backdrop-blur-[6.5px] border border-white p-[1.5%] px-[3%] flex flex-col gap-2.5 h-[670px] w-100">
                 <div className = "totalTitle" > { isIncome ? "Total Income" : "Total Expense" } </div>
                 <div className = "totalHeader"> 
-                    <span style={{fontWeight: "bold", fontSize: "30px"}}> { isIncome ? "Total Income: " : "Total Expense: "}
-                        <span style = {{color: isIncome? "rgb(0, 184, 178)" : "rgb(224, 27, 69)"}}> $ 
+                    <span className = "font-900 text-h8"> { isIncome ? "Total Income: " : "Total Expense: "}
+                        <span className={isIncome ? "text-income" : "text-expense"}> $ 
                             { isIncome ? getTotalIncome() : getTotalExpense() }
                         </span> 
                     </span> 
@@ -64,7 +64,7 @@ const TotalMainBoard = () => {
                             placeholder = "Amount*" 
                             max={1000000}
                         />
-                        <div style = {{fontWeight: "600"}}> Category </div>
+                        <div style = {{fontfont: "600"}}> Category </div>
                         <FormControl className = "inputField" required
                             sx={{ m: 1, minWidth: 150 }} 
                             // label = "Category*"

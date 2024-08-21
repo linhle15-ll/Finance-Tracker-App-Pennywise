@@ -30,7 +30,7 @@ export const Dashboard = async () => {
                     <div className="mt-8 flex flex-wrap gap-4">
                         
                         <a
-                            href={user ? "/PennyWise/dashboard" : "/PennyWise/sign-in"}
+                            href={user ? "/dashboard" : "/sign-in"}
                             className="block w-full rounded bg-[rgb(76,222,161)] px-12 py-3 text-sm font-medium text-gray-900 shadow hover:bg-[rgb(76,222,161,0.8)] focus:outline-none focus:ring active:bg-[rgb(76,222,161)] sm:w-auto"
                         >
                             Get Started
