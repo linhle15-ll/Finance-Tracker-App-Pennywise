@@ -21,6 +21,7 @@ For this project, I use <strong>MERN Stack</strong>, which is a common tech stac
 - <img src="https://img.icons8.com/fluency/48/000000/node-js.png" width="20"/> <strong> Express.js (Node.js)</strong> for Backend 
 - <img src="https://img.icons8.com/plasticine/100/000000/react.png" width="20"/> <strong> React.js - Next.js </strong> for Frontend
 - 🐻 <strong>Zustand</strong> (instead of Redux) </strong> for Statement management
+- <strong> TailwindCSS </strong> for styling
 
 ### Where I got the inspiration form (Why the app is created? )
 An inspiration for me to work on a project often stems from my own problem, and my perspective on the problem with other people. Personally speaking, I am not very good at financial management, but I tried to be better at this when I started my independent life as an international student in a completely foreign country and started my first job. I deeply understand how important it is for students like me to feel "safe and secure" about financial matters.
