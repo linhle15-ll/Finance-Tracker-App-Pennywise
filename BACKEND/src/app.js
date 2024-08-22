@@ -5,9 +5,16 @@ const path = require('path');
 
 const app = express();
 
-// Middlewares
-app.use(express.json()); // Middleware to parse incoming JSON request body in Express
-app.use(cors()); // Middleware to connect frontend and backend 
+// ------ Middlewares -------
+// Middleware to parse incoming JSON request body in Express
+app.use(express.json()); 
+
+// CORS config
+app.use(cors({
+    origin: 'https://finance-tracker-app-pennywise.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], // Specify the allowed methods as needed
+    credentials: true // If you need to include cookies or authentication headers
+  }));
 
 // Connect to MongoDB
 const db = require('../src/db/db.js');

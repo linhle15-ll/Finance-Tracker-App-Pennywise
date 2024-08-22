@@ -5,8 +5,6 @@ const db = async() => {
     try {
         mongoose.set('strictQuery', false);
         await mongoose.connect(process.env.MONGODB_URL)
-
-        // Add options: useNewUrlParser and useUnifiedTopology => avoid deprecation warnings + ensure a stable connection config
         console.log('Connected to MongoDB')
     } catch (error) {
         console.error("Failed to connect to MongoDB", error)
