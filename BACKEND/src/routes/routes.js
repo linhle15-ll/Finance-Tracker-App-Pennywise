@@ -18,7 +18,7 @@ router.post('/add-income', addIncome)
     .delete('/delete-budget/:id', deleteBudget)
     .put('/update-budget-distribution/:id', updateBudgetDistribution)
 
-    .get('/test', (req, res) => {
+    .get('/', (req, res) => {
         res.status(200).json({message: 'Hello World'});
     });
 
