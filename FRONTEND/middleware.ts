@@ -1,7 +1,7 @@
 import { clerkMiddleware,  createRouteMatcher} from "@clerk/nextjs/server";
 
 // protect all routes except from landing page, sign-in and sign-up routes
-const isPublicRoute = createRouteMatcher(['/PennyWise/sign-in(.*)', '/PennyWise/sign-up(.*)', '/PennyWise']);
+const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)', '/']);
 
 export default clerkMiddleware((auth, request) => {
   if(!isPublicRoute(request)) { // if the request route is different from public routes, then protect
