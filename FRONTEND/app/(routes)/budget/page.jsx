@@ -48,11 +48,11 @@ const Budget = () => {
             {/* main board: right */}
             <div className = "font-poppins flex flex-col w-[100%] text-darkGreen">
                 <div className="bg-white/30 rounded-lg shadow-lg backdrop-blur-[6.5px] border border-white p-[1.5%] px-[3%] flex flex-col gap-2.5 h-[670px] w-100">
-                    <div className = "font-poppins font-900 text-h7"> My Budgets </div>
+                    <div className = "font-poppins font-700 text-h6"> My Budgets </div>
                     <div> Start 
-                        <span className = "font-poppins font-900 text-mintGreen"> Budgeting </span> 
+                        <span className = "font-poppins font-700 text-mintGreen"> Budgeting </span> 
                         and 
-                        <span className = "font-poppins font-900 text-mintGreen"> Smartly Reach Your Financial Goals </span> 
+                        <span className = "font-poppins font-700 text-mintGreen"> Smartly Reach Your Financial Goals </span> 
                         with ✨ <span className = "font-poppins font-bold">PennyWise</span> ✨!
                     </div> 
                     <div className = "flex flex-wrap gap-[2%] h-[78%] overflow-y-scroll pr-[10px] w-full">

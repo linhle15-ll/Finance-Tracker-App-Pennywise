@@ -4,7 +4,7 @@ import { Modal } from 'antd';
 import { deleteIncome, deleteExpense, getIncomes, getExpenses } from '../stores/transactionstore.ts'
 import { deleteBudget, getBudgets } from '../stores/budgetstore';
 
-const ConfirmDeleteModal = ({ id, open, setOpen, isIncome, isExpense, isBudget}) => { // pass props in a { }
+const ConfirmDeleteModal = ({ id, open, setOpen, isIncome, isExpense, isBudget}) => {
     const handleOk = async () => {
         if (isIncome) {
             await deleteIncome (id)

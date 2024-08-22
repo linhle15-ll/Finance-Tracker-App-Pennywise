@@ -34,40 +34,38 @@ const TotalMainBoard = () => {
     return(
         <div className = "font-poppins flex flex-col w-[100%] text-darkGreen">
             <div className="bg-white/30 rounded-lg shadow-lg backdrop-blur-[6.5px] border border-white p-[1.5%] px-[3%] flex flex-col gap-2.5 h-[670px] w-100">
-                <div className = "totalTitle" > { isIncome ? "Total Income" : "Total Expense" } </div>
-                <div className = "totalHeader"> 
-                    <span className = "font-900 text-h8"> { isIncome ? "Total Income: " : "Total Expense: "}
-                        <span className={isIncome ? "text-income" : "text-expense"}> $ 
+                <div className = "flex justify-center bg-white border-2 border-mintGreen rounded-[20px] p-1"> 
+                    <span className = "font-700 text-h8 py-3"> { isIncome ? "Total Income: " : "Total Expense: "}
+                        <span className={isIncome ? "text-mintGreen" : "text-red"}> $ 
                             { isIncome ? getTotalIncome() : getTotalExpense() }
-                        </span> 
+                        </span>
                     </span> 
                 </div>
-                 
-                <div className = "totalBody">
-                    <form className = "inputFields" onSubmit = {isIncome ? addIncome : addExpense}>
-                        <div className = "addTitle"> { isIncome ? "Add Income" : "Add Expense"} </div>
-                        <input className = "inputField" required 
+                 {/* total body */}
+                <div className = "inline-flex flex-row gap-50 mt-5">
+                    <form className = "flex flex-col gap-2.5 w-[25%]" onSubmit = {isIncome ? addIncome : addExpense}>
+                        <div className = "font-700 text-h7"> { isIncome ? "Add Income" : "Add Expense"} </div>
+                        <input className = "bg-white/50 border-grey rounded-[10px] shadow-custom backdrop-blur-[6.5px] border-[1.8px] p-[5%] w-[150%] cursor-pointer focus:outline-none focus:bg-white focus:border-mintGreen" required 
                             type = "text" 
                             onChange={(e) => handleChange("title", e.target.value)} 
                             placeholder = "Title*"
                             maxLength={30}
                         /> 
-                        <input className = "inputField" 
+                        <input className = "bg-white/50  border-grey rounded-[10px] shadow-custom backdrop-blur-[6.5px] border-[1.8px] p-[5%] w-[150%] cursor-pointer focus:outline-none focus:bg-white focus:border-mintGreen" 
                             type = "text"  
                             onChange={(e) => handleChange("description", e.target.value)} 
                             placeholder = "Description" 
                             maxLength={40}/> 
 
-                        <input className = "inputField" required 
+                        <input className = "bg-white/50  border-grey rounded-[10px] shadow-custom backdrop-blur-[6.5px] border-[1.8px] p-[5%] w-[150%] cursor-pointer focus:outline-none focus:bg-white focus:border-mintGreen" required 
                             type = "number"  
                             onChange={(e) => handleChange("amount" , e.target.value)} 
                             placeholder = "Amount*" 
                             max={1000000}
                         />
-                        <div style = {{fontfont: "600"}}> Category </div>
-                        <FormControl className = "inputField" required
+                        <div className = "font-700 text-h9"> Category </div>
+                        <FormControl className = "bg-white/50  border-grey rounded-[10px] shadow-custom backdrop-blur-[6.5px] border-[1.8px]" required
                             sx={{ m: 1, minWidth: 150 }} 
-                            // label = "Category*"
                             >
                             
                             <Select
@@ -75,7 +73,7 @@ const TotalMainBoard = () => {
                             displayEmpty
                             >
                                 {categories.map((category, index) => {return (
-                                    <MenuItem className = "selectField" key={index} value={category.value}>
+                                    <MenuItem className = "bg-white/50  border-grey rounded-[10px] shadow-custom backdrop-blur-[6.5px] border-[1.8px] p-[5%] w-[150%] cursor-pointer focus:outline-none focus:bg-white focus:border-mintGreen" key={index} value={category.value}>
                                         {category.label}
                                     </MenuItem>
                                 )})}
@@ -83,13 +81,13 @@ const TotalMainBoard = () => {
                         </FormControl>
 
                         {/* SET Different menu items for income and expense */}
-                        <input className = "inputField" required
+                        <input className = "bg-white/50 border-grey rounded-[10px] shadow-custom backdrop-blur-[6.5px] border-[1.8px] p-[5%] w-[120%] cursor-pointer focus:outline-none focus:bg-white focus:border-mintGreen" required
                             type = "date"
                             onChange={(e) => handleChange("date", e.target.value)} 
                             placeholder = "Date" 
                         />
 
-                        <button className = "addbtn" type = "submit"> { isIncome ? "Add Income" : "Add Expense" } </button>
+                        <button className = "cursor-pointer bg-mintGreen mt-[6%] rounded-[15px] font-700 w-30 py-3 px-1 border-2 border-white p-4-3 hover:bg-darkMintGreen active:bg-darkMintGreen" type = "submit"> { isIncome ? "Add Income" : "Add Expense" } </button>
                         
                     </form>
                     

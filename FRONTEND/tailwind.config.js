@@ -31,15 +31,14 @@ module.exports = {
       },
       colors: {
         mintGreen: "#00B8B2",
+        darkMintGreen: "#00A5A0",
         darkGreen: "#02403E",
         lightMintGreen: "#04a6a161",
         lightGreen: "#04DB80",
         white: "#FFFFFF",
         red: "#e01b45",
         grey: "#808080",
-        lightGrey: "#D3D3D3",
-        income: "#00B8B2",
-        expense: "#e01b45"
+        lightGrey: "#D3D3D3"
       },
       boxShadow: {
         custom: '0 4px 8px rgba(0, 0, 0, 0.1)', // Use the custom shadow color
@@ -62,12 +61,6 @@ module.exports = {
       },
       borderWidth: {
         "medium": "1.5px",
-      },
-      keyframes: {
-        'slide-in-fade': {
-          '0%': { transform: 'translateY(-20px), translateX(-20px)', opacity: '0' },
-          '100%': { transform: 'translateY(-15px), translateX(-15px)', opacity: '1' },
-        },
       },
       
     },

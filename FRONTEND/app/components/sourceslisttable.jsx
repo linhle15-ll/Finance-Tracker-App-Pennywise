@@ -42,13 +42,13 @@ const SourcesListTable = () => {
 
     return (
         <div>
-            <form className = "searchBar">
-                <input placeholder={isIncome ? "Search Income Resource" : "Search Expense Resource"}
-                onChange={(e) => setSearch(e.target.value)}
+            <form className = "flex flex-row gap-4 items-center p-1-2 bg-white rounded-[10px] shadow-custom backdrop-blur-[6.5px] border-[1.8px] border-mintGreen mt-3 p-3 w-[35rem] cursor-pointer">
+                <input className = "box-border bg-none w-[100%] border-none rounded-[15px]outline-none p-1 text-black focus:outline-none " placeholder={isIncome ? "Search Income Resource" : "Search Expense Resource"}
+                    onChange={(e) => setSearch(e.target.value)}
                 />
                 {SearchIcon}
             </form>
-            <div className="resourcesGroup">
+            <div className = "flex flex-col gap-3 overflow-y-scroll max-h-90 mt-8 ">
                 {resourcesArr
                 .filter((resource) => {
                     return search.toLowerCase() === "" 
@@ -61,24 +61,24 @@ const SourcesListTable = () => {
                     || dateFormat(resource.date).includes(search.toLowerCase())
 
                 }).map((item, index) => (
-                    <div key={index} className = 'resourceContainer'>
+                    <div key={index} className = 'flex items-center bg-white border-2 border-mintGreen rounded-[20px] px-5 py-4 mx-2.5 shadow-custom w-100 mr-2.5'>
                         
-                        <div className = 'firstCol'>
+                        <div className = 'mr-3 border-2 border-grey p-3 rounded-[15px]'>
                             {getCategoryIcon(item.category)}
                         </div> 
                     
-                        <div className = 'secondCol'> 
-                            <div className = 'resourceTitle' style = {{color: item.type === "income"? "#00B8B2" : "#e01b45"}} >{item.title}</div>
-                            <div className = 'resourceDescription'>{item.description}</div>
-                            <div className = 'resourceCategory'> {item.category}</div>
-                            <div className = 'resourceDate'> {dateFormat(item.date)}</div>
+                        <div className = 'flex-1 mr-2.5'> 
+                            <div className = 'font-700 text-mintGreen mb-2 text-h9 break-words' style = {{color: item.type === "income"? "#00B8B2" : "#e01b45"}} >{item.title}</div>
+                            <div className = 'text-grey mb-2 break-words text-h10'>{item.description}</div>
+                            <div className = 'text-grey text-h10'> {item.category}</div>
+                            <div className = 'text-grey text-h10'> {dateFormat(item.date)}</div>
                         </div>
-                        <div className = 'thirdCol'> 
-                            <div className = 'resourceAmount'>
-                                <span style = {{color: item.type === "income"? "#00B8B2" : "#e01b45"}}> $ </span > <span style = {{color: item.type === "income"? "#00B8B2" : "#e01b45"}}> {item.amount} </span>
+                        <div className = 'flex flex-col items-end'> 
+                            <div className = 'font-700 text-mintGreen mb-2.5 text-h10'>
+                                <span className = {item.type === "income"? "text-mintGreen text-h10" : "text-red text-h7"}> $ {item.amount} </span>
                             </div>
-                            <button className = 'delete' type = "button" onClick = {() => showModal(item._id)}> 
-                                {Delete} <span> delete </span> 
+                            <button className = 'flex items-center bg-none border-none text-red cursor-pointer hover:font-h10' type = "button" onClick = {() => showModal(item._id)}> 
+                                {Delete} <span className = "ml-2 cursor-pointer"> delete </span> 
                             </button>
                         </div>
                     </div>

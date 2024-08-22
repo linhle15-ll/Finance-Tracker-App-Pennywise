@@ -31,3 +31,15 @@
   position: relative;
   z-index: 2;
 }
+
+/* Confirmation Modal */
+:where(.css-dev-only-do-not-override-d2lrxs).ant-btn-primary {
+  color: #fff;
+  background: #c80b0b;
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
+
+:where(.css-dev-only-do-not-override-d2lrxs).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #fff;
+  background: #c80b0b;
+}
