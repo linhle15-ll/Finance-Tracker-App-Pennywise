@@ -11,7 +11,7 @@ app.use(express.json());
 
 // CORS config
 app.use(cors({
-    origin: 'https://finance-tracker-app-pennywise.vercel.app',
+    origin: 'https://pennywise-linhle.vercel.app/',
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], // Specify the allowed methods as needed
     credentials: true // If you need to include cookies or authentication headers
 }));
