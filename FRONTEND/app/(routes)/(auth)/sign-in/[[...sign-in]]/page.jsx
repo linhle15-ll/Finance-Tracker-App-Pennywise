@@ -20,7 +20,7 @@ export default function SigninPage() {
             />
 
             <div className="hidden lg:relative lg:block lg:p-12">
-              <a className="block text-white" href="/PennyWise">
+              <a className="block text-white" href="/">
                 <span className="sr-only">Home</span>
                 <Image
                   src={logo}
