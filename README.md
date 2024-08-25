@@ -115,6 +115,20 @@ You can start editing the page by modifying `FRONTEND/...` for FRONTEND and `BAC
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Poppins, a custom Google Font.
 
+**Note**
+To try with http://localhost:3000, you are supposed to change "https://pennywise-backend-linhle.vercel.app" to "/api".
+
+For example: 
+
+``
+const res = await axios.put(`https://pennywise-backend-linhle.vercel.app/update-budget-distribution/${id}`
+``
+
+to
+
+``
+const res = await axios.put(`/api/update-budget-distribution/${id}`
+``
 ## Usage instruction
 ### Welcome Page and Sign-in Page
 ![Sign-in](https://github.com/user-attachments/assets/d8dc6c60-dce0-4d42-9d11-ca24fd26cf23)
