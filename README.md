@@ -56,7 +56,12 @@ This project is a MERN stack application for tracking finances. It includes a fr
 - Node.jsv (BACKEND)
 - Express.js (FRONTEND)
 - npm or yarn 
-- MongoDB Atlas
+- MongoDB Atlas: Set up a project on MongoDB Atlas and get the connection
+
+The setup should look like this: 
+
+![image](https://github.com/user-attachments/assets/7991bbfe-ce48-4b91-836c-60107f0d8dca)
+
 - Dependencies:
 
 | Package                    | Version   |
@@ -116,7 +121,7 @@ You can start editing the page by modifying `FRONTEND/...` for FRONTEND and `BAC
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Poppins, a custom Google Font.
 
 **Note**
-To try with http://localhost:3000, you are supposed to change "https://pennywise-backend-linhle.vercel.app" to "/api".
+To try with http://localhost:3000, you are supposed to change "https://pennywise-backend-linhle.vercel.app" to "http://localhost:5000/api".
 
 For example: 
 
@@ -127,7 +132,7 @@ const res = await axios.put(`https://pennywise-backend-linhle.vercel.app/update-
 to
 
 ``
-const res = await axios.put(`/api/update-budget-distribution/${id}`
+const res = await axios.put(`http://localhost:5000/api/update-budget-distribution/${id}`
 ``
 ## Usage instruction
 ### Welcome Page and Sign-in Page
