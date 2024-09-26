@@ -13,9 +13,6 @@
 
 ## Project Description
 
-### Website: 
-https://finance-tracker-app-pennywise.vercel.app/
-
 ### What Tech Stacks are used? 
 
 For this project, I use <strong>MERN Stack</strong>, which is a common tech stack for app development:
